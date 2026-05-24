@@ -1,0 +1,44 @@
+name: flutter_clean_bloc
+description: Flutter Clean Architecture + BLoC — список постов с детальным просмотром
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # BLoC
+  flutter_bloc: ^8.1.4
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+
+  # DI
+  get_it: ^7.6.7
+  injectable: ^2.3.2
+
+  # Network
+  http: ^1.2.1
+
+  # Functional programming (Either)
+  dartz: ^0.10.1
+
+  # UI
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  bloc_test: ^9.1.6
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+  injectable_generator: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/food_posts.json
